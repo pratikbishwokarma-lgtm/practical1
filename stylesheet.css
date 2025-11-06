@@ -1,0 +1,240 @@
+#welcome{
+    text-align: center;
+    text-decoration: underline
+    ;
+    color: blue;
+}
+body{
+    background-color: bisque;
+}
+#christ{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#link{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #0056b3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--light-text-color);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+.highlight {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.important-note {
+    background-color: #ffeeba;
+   
+    padding: 5px;
+    border-left: 5px solid #ffc107;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.hero-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.course-table th,
+.course-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.course-table thead tr {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+.course-table tbody tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.course-table tbody tr:hover {
+    background-color: #b8daff;
+}
+
+
+.registration-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select,
+.registration-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form button {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #a0c3e8;
+    text-decoration: none;
+}
+
+/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    
+    .course-table,
+    .course-table thead,
+    .course-table tbody,
+    .course-table th,
+    .course-table td,
+    .course-table tr {
+        display: block;
+    }
+
+    
+    .course-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .course-table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    
+    .course-table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    
+    .course-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-align: left;
+        color: var(--primary-color);
+    }
+}

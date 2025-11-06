@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collegewebsite</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome"> Welcome To Christ University</h1>
+    </header>
+    <div id="christ">
+<img src="christ.jpg" alt="christ university" height="150px">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to School of science department christ university</h2>
+            
+            <p>
+                The Computer Science Department is dedicated to providing students with the knowledge and skills necessary
+                to excel in the rapidly evolving world of technology. Our curriculum emphasizes a strong foundation in <span
+                    class="highlight">theoretical concepts</span> and extensive hands-on experience.
+            </p>
+           
+        </section>
+    
+        <section id="courses">
+            <h2>Course Offerings</h2>
+    
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>SN</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Course Code">1</td>
+                        <td data-label="Course Name">Introduction to Programming</td>
+                        <td data-label="Credits">3</td>
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="Course Code">2</td>
+                        <td data-label="Course Name">Data Structures & Algorithms</td>
+                        <td data-label="Credits">4</td>
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="Course Code">3</td>
+                        <td data-label="Course Name">Web Development</td>
+                        <td data-label="Credits">3</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3>Skills You'll Master</h3>
+            <ul>
+                <li>Programming in Python and Java</li>
+                <li>Database Design (SQL)</li>
+                <li>Cloud Computing Fundamentals</li>
+                <li>Software Engineering Principles</li>
+            </ul>
+    
+            <h3>Career Pathways</h3>
+            <ol>
+                <li>Software Developer</li>
+                <li>Data Scientist</li>
+                <li>Cybersecurity Analyst</li>
+                <li>UX/UI Designer</li>
+            </ol>
+    
+        </section>
+        
+        
+        <section id="register">
+            <h2>Student Registration Form</h2>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="program">Select Program:</label>
+                    <select id="program" name="program" required>
+                        <option value="">-- Select One --</option>
+                        <option value="BSCS">B.S. Computer Science</option>
+                        <option value="MSIT">M.S. Information Technology</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="comments">Questions/Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+        
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+        </div>
+        <footer>
+            <p>&copy; 2025 Computer Science Department | Tech College. All rights reserved.</p>
+            <p><a href="christuniversity@gmail.com" style="color: #a0c3e8;">christuniversity@gmail.com</a></p>
+        </footer>
+</body>
+</html>
